@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh"><head>
+
+<meta charset="utf-8">
+
+<title>手写数字识别</title>
+<link rel="shortcut icon" href="../static/m8.png">
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="../static/home.css"></head>
+
+<body onselectstart="return false">
+
+<div id="mnist-pad">
+{# 手写数字板 #}
+<div class="mnist-pad-body">
+      <canvas></canvas>
+</div>
+{# 识别结果 #}
+<div class="mnist-pad-footer">
+      <div class="mnist-pad-result">
+        <h5>识别结果:</h5>
+        <h5 id="mnist-pad-result-showing"></h5>
+      </div>
+{#  操作按钮  #}
+<div class="mnist-pad-actions">
+   <button type="button" id="mnist-pad-clear" >清除</button>
+   <button type="button" id="mnist-pad-save">识别</button>
+</div>
+
+</div></div>
+
+<script src="../static/signature_pad.js"></script>
+
+<script src="../static/mnist.js"></script>
+
+<script src="../static/app.js"></script>
+
+</body>
+
+</html>
